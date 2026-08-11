@@ -55,7 +55,7 @@ second_opinion/
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
-git clone https://github.com/AgamjotSingh21/SecondOpinion.git
+git clone https://github.com/AgamjotSingh21/SecondOpinion-LangG.git
 
 cd SecondOpinion/second_opinion
 
