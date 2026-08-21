@@ -4,7 +4,7 @@ from langgraph.graph import StateGraph, START, END
 
 from agents import (
     search_db, for_agent, against_agent,
-    questioner_agent, judge_agent
+    questioner_agent, for_agent_round2, against_agent_round2, judge_agent
 )
 
 
@@ -81,7 +81,8 @@ def round2_for(state):
     print("ROUND 2 — FOR AGENT ON BLIND SPOTS")
     print("-"*40)
 
-    r2_for = for_agent(
+    r2_for = for_agent_round2(
+        state["question"],
         state["blind_spots"],
         state["updated_pool"]
     )
@@ -96,7 +97,8 @@ def round2_against(state):
     print("ROUND 2 — AGAINST AGENT ON BLIND SPOTS")
     print("-"*40)
 
-    r2_against = against_agent(
+    r2_against = against_agent_round2(
+        state["question"],
         state["blind_spots"],
         state["updated_pool"]
     )
