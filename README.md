@@ -76,7 +76,7 @@ cd SecondOpinion-LangG
 ```bash
 # Windows (PowerShell)
 python -m venv venv
-.\venv\Scripts\Activate.ps1
+venv\Scripts\activate
 
 # Linux / macOS
 python3 -m venv venv
